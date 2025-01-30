@@ -25,8 +25,8 @@ print(potencia(5), potencia(6, 3), potencia(10, 4))
 def calcular_pagamento(horastrabalhadas, taxa_hora):
     pagamento_total = horastrabalhadas * taxa_hora
     return pagamento_total
-horas = 40
+hora = 40
 taxa = 20
-total = calcular_pagamento(horas, taxa)
+total = calcular_pagamento(hora, taxa)
 print(total)
 
