@@ -7,15 +7,19 @@ saudacao('Ítalo')
 #QUESTÃO 2
 def dobro(numero):
     return numero * 2
-resultado = dobro(5)
+resultado = dobro(7)
 print(resultado)
 
 
 #QUESTÃO 3
-def saudacao_personalizada(nome, idioma):
-    idioma = ingles
-    return nome
-print(ingles)
+def saudacao_personalizada(nome, idioma = "inglês"):
+    if idioma == "inglês":
+        return f"Hello, {nome}"
+    elif idioma == "espanhol":
+        return f"Hola, {nome}"
+    elif idioma == "frânces":
+        return f"Bonjour, {nome}"
+
 
 
 #QUESTÃO 4
@@ -32,4 +36,6 @@ hora = 40
 taxa = 20
 total = calcular_pagamento(hora, taxa)
 print(total)
+
+
 

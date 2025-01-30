@@ -1,4 +1,5 @@
 import pytest
+from main import *
 # Teste para a função saudacao
 @pytest.mark.parametrize("nome, saudacao_esperada", [("Alice", "Olá, Alice!"), ("Bob", "Olá, Bob!")])
 def test_saudacao(nome, saudacao_esperada):
