@@ -20,8 +20,6 @@ def saudacao_personalizada(nome, idioma = "inglês"):
     elif idioma == "frânces":
         return f"Bonjour, {nome}"
 
-
-
 #QUESTÃO 4
 def potencia(base, expoente = 2):
     return base ** expoente
@@ -38,4 +36,26 @@ total = calcular_pagamento(hora, taxa)
 print(total)
 
 
+#QUESTÃO 11
+def contar_minusculas(texto: str):
+    minusculas = 0
+    for letra in texto:
+        if letra.isalpha():
+            if letra.lower() == letra:
+                minusculas += 1
+        return minusculas
+    
+def contar_maiusculas(texto: str):
+    maiusculas = 0
+    for letra in texto:
+        if letra.isalpha():
+            if letra.uppper() == letra:
+                maiusculas += 1
+        return maiusculas
+    
+def contagem_letras(texto:str):
+    minusculas = contagem_letras()
+    maiusculas = contagem_letras()
 
+    return maiusculas, minusculas
+    
